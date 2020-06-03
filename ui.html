@@ -5,21 +5,21 @@
 			<li v-for="msg in popMessages" v-html="msg"></li>
 		</ul>
 	</div>
-	<model-alert v-if="showUpdate" :title="`膜拜${SIYUAN} ${VERSION} ${VERSION_NAME}`"
+	<model-alert v-if="showUpdate" :title="`膜拜${CONNECT} ${VERSION} ${VERSION_NAME}`"
 		:value="VERSION_MESSAGE"></model-alert>
-	<h1 v-html="`膜拜${SIYUAN}`"></h1>
+	<h1 v-html="`膜拜${CONNECT}`"></h1>
 	<div>
 		<button style="float: right;"
 			@click="()=>dailyMessage=DAILY_MESSAGES[Math.floor(Math.random()*DAILY_MESSAGES.length)]">{{`换一个`}}</button>
 		<p v-html="dailyMessage"></p>
 	</div>
 	<div class="area">
-		<h2 v-html="`荒野`"></h2>
+		<h2 v-html="`古城`"></h2>
 		<blockquote>
-			<p v-html="`曾经，有一个高度发达的文明在这个星球上度过了它最为繁荣的时代。在那时，人们相信${SIYUAN}是最强的神，也是这个星球的科技、魔法与信仰三大学科体系高度发展的原因。`">
+			<p v-html="`${CONNECT}是最强的神，这是一个星球不变的真理。`">
 			</p>
-			<p v-html="`然而好景不长，曾被人们认为亘古不变的真理在一次失控的魔法实验之后支离破碎。科技与魔法的支柱轰然倒塌，毁灭席卷了整个星球。`"></p>
-			<p v-html="`高楼变为废墟，法阵化作黄土，雕像碎成砂砾，但${SIYUAN}并未抛弃这个文明——因为信仰仍在。`"></p>
+			<p v-html="`在这个星球，${CONNECT}AK IOI从来都是不变的真理。但是神做出了一个令人匪夷所思的行为——毁灭这个文明。`"></p>
+			<p v-html="`所幸这个文明没有被毁掉，但是高楼变为废墟，法阵化作黄土，雕像碎成砂砾，但${CONNECT}并未抛弃这个文明——因为信仰仍在。`"></p>
 		</blockquote>
 		<div class="col">
 			<h4 v-html="`膜拜`"></h4>
@@ -28,7 +28,7 @@
 					<span>{{`您已膜拜${pn(Math.floor(moValue))}次`}}</span>
 				</div>
 				<button @click="moSiyuan(1)" style="color:red"
-					v-html="`膜拜${SIYUAN}${moDelta!==1?`${pn(moDelta)}次`:''}`"></button>
+					v-html="`膜拜${CONNECT}${moDelta!==1?`${pn(moDelta)}次`:''}`"></button>
 				<span v-if="bookEffect>0">{{`${pn(bookEffect)}点击/秒`}}</span>
 			</div>
 			<div v-if="moCount>=10">
@@ -91,7 +91,7 @@
 		<strong>{{`已发现${pn(temple)}个遗迹`}}</strong>
 		<blockquote>
 			<p v-html="`过去的事物深埋于地下，而且数量稀少，发掘它们需要坚定的信仰。尽管道路艰辛，但这是前进所必须的代价。文明不进即退，而这残存的文明已经无路可退。`"></p>
-			<p v-html="`在遗迹中，人们惊喜地发现了向${SIYUAN}祈求水晶的途径。拥有了水晶，两扇大门便随着遗迹的探索徐徐开启……`"></p>
+			<p v-html="`在遗迹中，人们惊喜地发现了向${CONNECT}祈求水晶的途径。拥有了水晶，两扇大门便随着遗迹的探索徐徐开启……`"></p>
 		</blockquote>
 		<div class="area">
 			<div class="area">
