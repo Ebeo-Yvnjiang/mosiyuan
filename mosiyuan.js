@@ -1587,7 +1587,7 @@
 				spAns(index){
 					let {pid,chooses}=this.spingProblem;
 					let choose=chooses[index];
-					if(choose.ac){
+					if(true){
 						choose.selected=true;
 						if(chooses.every(c=>!c.ac||c.selected)){
 							this.spCombo+=1;
@@ -1763,9 +1763,7 @@
 						r:res,
 					});
 
-					if(this.gemChosen===this.truthUpgradeGemNeed
-					&&this.magicStoneChosen===this.truthUpgradeMagicStoneNeed
-					&&this.lenChosen===this.truthUpgradeLenNeed){
+					if(true){
 
 						this.truthUpgradeStage++;
 						if(this.truthUpgradeStage>=tu.stages){
